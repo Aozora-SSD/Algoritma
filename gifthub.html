@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ari Dwi Syahputra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+       
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; 
+            color: #e2e8f0;
+            line-height: 1.6;
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 24px;
+        }
+        header h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.025em;
+        }
+        header p {
+            color: #94a3b8;
+            font-size: 1rem;
+            margin-top: 4px;
+        }
+        .task-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .task-card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+        .task-card:hover {
+            border-color: #3b82f6;
+            background-color: #243249;
+        }
+        .task-header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+        .task-title h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 6px;
+        }
+        .arrow-icon {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            transition: transform 0.2s ease;
+        }
+        .task-card.active .arrow-icon {
+            transform: rotate(180deg);
+            color: #3b82f6;
+        }
+        .task-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: #0f172a; 
+        }
+
+        .task-content {
+            padding: 20px;
+            border-top: 1px solid #334155;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+        }
+
+        .task-content h4 {
+            color: #ffffff;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .task-content ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Ari Dwi Syahputra</h1>
+            <p> &bull; Semester 2</p>
+        </header>
+
+        <main class="task-container">
+
+            <div class="task-card">
+                <div class="task-header" onclick="toggleAccordion(this)">
+                    <div class="task-title">
+                        <h3>Pertemuan 4</h3>
+                    </div>
+                    <div class="arrow-icon">▼</div>
+                </div>
+                <div class="task-body">
+                    <div class="task-content">
+                        <h4>Tugas</h4>
+                        <p>
+                            1. Berikan contoh algoritma di kehidupan sehari hari dengan studi kasus dibawah ini:<br>
+                            a. Mengambil uang di ATM<br>
+                            b. Membuat kopi yang rasa manis dan pahitnya pas<br>
+                            c. Menghitung nilai y dari persamaan y = 3x + 6<br>
+                            2. Apa yang dimaksud dengan algoritma dan program?<br>
+                            3. Suatu algoritma terdiri dari tiga struktur dasar, yaitu sekuensial, pemilihan, dan perulangan. Jelaskan masing-masing!<br>
+                            4. Uraikan fungsi dari Bahasa pemrograman yg anda ketahui !<br>
+                            Jawaban :<br>
+
+                            <iframe src="https://drive.google.com/file/d/1L0QubKV9Z0AE-wKNJzR-TDQH9pyHw5qE/preview" width="100%" height="500"></iframe>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header" onclick="toggleAccordion(this)">
+                    <div class="task-title">
+                        <h3>Pertemuan 5</h3>
+                    </div>
+                    <div class="arrow-icon">▼</div>
+                </div>
+                <div class="task-body">
+                    <div class="task-content">
+                        <h4>Post Test</h4>
+                        <p>
+                            1. Jelaskan perbedaan jenis tipe data primitif dan non- primitif!<br>
+                            2. Perhatikan penulisan variabel dibawah ini:<br>
+                            &#9679; Int 5angka<br>
+                            &#9679; String nama siswa <br>
+                            &#9679; Int static <br>                            
+                            3. Berikan contoh bagaimana cara mendeklarasikan tipe data array!<br>
+                            4. Sebutkan dan uraikan operator artimatika dalam pemrograman bahasa java!<br>
+                            5. Berikan contoh implementasi operator pembagian dengan menggunakan Bahasa java!<br>
+                            jawaban <br>
+                            <iframe src="https://drive.google.com/file/d/1K96WN8SZht-caeQTNX9XFm9Ci6sgKpxs/preview" width="100%" height="500"></iframe>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header" onclick="toggleAccordion(this)">
+                    <div class="task-title">
+                        <h3>Pertemuan 9</h3>
+                    </div>
+                    <div class="arrow-icon">▼</div>
+                </div>
+                <div class="task-body">
+                    <div class="task-content">
+                        <h4>Pre-Test</h4>
+                        <p>
+                            Struktur Algoritma Pemrograman Sekuensial<br>
+                            <br>
+                            1.Apa yang anda ketahui tentang instruksi pada algoritma ?<br>
+                            2.Apa yang dimaksud dengan struktur algoritma sekuensial? <br>
+                            3.Bagaimana karakteristik dari struktur sekuensial? <br>
+                            4.Berikan contoh sederhana penggunaan struktur sekuensial! <br>
+                            Jawaban <br>
+                            <iframe src="https://drive.google.com/file/d/1ORp-d00Aq5mX4YC4xS6Mxnu3iOyfKdSr/preview" width="100%" height="500"></iframe>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header" onclick="toggleAccordion(this)">
+                    <div class="task-title">
+                        <h3>Pertemuan 10</h3>
+                    </div>
+                    <div class="arrow-icon">▼</div>
+                </div>
+                <div class="task-body">
+                    <div class="task-content">
+                        <h4>Tugas</h4>
+                        <p>
+                            Buatlah Algoritma Skuensial dari sebuah kasus, Terdiri dari Flowchart, Psodocode/Diskripsi Program dan Programnya (bebas pakai bahasa pemrograman apa saja.<br>
+                            <iframe src="https://drive.google.com/file/d/163zE478sNcwEOn8JED7yByngedOXSGUK/preview" width="100%" height="500"></iframe>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header" onclick="toggleAccordion(this)">
+                    <div class="task-title">
+                        <h3>Pertemuan 11</h3>
+                    </div>
+                    <div class="arrow-icon">▼</div>
+                </div>
+                <div class="task-body">
+                    <div class="task-content">
+                        <h4>Tugas</h4>
+                        <p>
+                            Buatlah Program yang terdiri dari :<br>
+                            &#9679; Perulangan Struktur For<br>
+                            &#9679; Struktur While <br>
+                            &#9679; Struktur Do-While<br>
+                            &#9679; Perulangan Bersarang (Nested Loop)<br>
+                            Menggunakan bahasa pemrograman yang kalian bisa (Bebas)<br>
+                            <iframe src="https://drive.google.com/file/d/1OHuDVA-guCOAgBBjgY5wHYSFuDDPU8NJ/preview" width="100%" height="500"></iframe>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script>
+        function toggleAccordion(element) {
+            const card = element.parentElement;
+            const body = card.querySelector('.task-body');
+            
+            card.classList.toggle('active');
+            if (card.classList.contains('active')) {
+                body.style.maxHeight = body.scrollHeight + "px";
+            } else {
+                body.style.maxHeight = "0";
+            }
+        }
+    </script>
+
+</body>
+</html>
